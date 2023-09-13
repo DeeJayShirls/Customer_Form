@@ -1,0 +1,118 @@
+<!--
+      Name: Dejanae Shirley
+      Description:This webpage serves as a Customer Registration form where users provide their information, including location details and personal information, in order to register as a customer.
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Customer registration form collecting user information.">
+    <meta name="keywords" content="Customer,Registration ">
+    <meta name="author" content="Dejanae Shirley">
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+
+    <h1>Customer Registration</h1>
+    <form action="Lab2Form.php" method="post">
+      <fieldset>
+        <legend>1. User Info</legend>
+        <table>
+          <tr>
+            <td><label for="FirstName">First Name</label><br>
+              <input type="text" id="FirstName" readonly value="Dejanae">
+            </td>
+            <td>&emsp;</td>
+            <td><label for="LastName">Last Name</label><br>
+              <input type="text" id="LastName" maxlength="10">
+            </td>
+          </tr>
+        </table>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" placeholder="format for email is xxx@yyy.zzz">
+
+        <table>
+          <tr>
+            <td><label for="password">Password</label><br>
+              <input type="password" id="password" placeholder="at least 8 characters">
+            </td>
+            <td>&emsp;</td>
+            <td><label for="PasswordRepeat">Password Repeat</label><br>
+              <input type="password" id="PasswordRepeat" placeholder="at least 8 characters">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend> 2. Location</legend>
+        <label for="Address">Address</label><br>
+        <input type="text" id="Address">
+        <table>
+          <tr>
+            <td><label for="City">City</label><br>
+              <input type="text" id="City">
+            </td>
+            <td>&emsp;</td>
+            <td><label for="State">State</label><br>
+              <input type="text" id="State">
+            </td>
+            <td>&emsp;</td>
+            <td><label for="Zip">Zip</label><br>
+              <input type="text" id="Zip">
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td><label for="Phone">Phone</label><br>
+              <input type="number" id="Phone" placeholder="NNN-NNN-NNNN">
+            </td>
+            <td>&emsp;</td>
+            <td><label for="Country">Country</label><br>
+              <select name="Country" id="Country">
+                <option value="USA">United States of America</option>
+                <option value="Canada">Canada</option>
+                <option value="Columbia">Columbia</option>
+                <option value="Mexico">Mexico</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+
+        <br><label for="Continent1">Continent</label><br>
+        <input type="radio" id="Continent1" name="Continent" value="North America">North America <br>
+        <input type="radio" id="Continent2" name="Continent" value="Europe">Europe <br>
+        <input type="radio" id="Continent3" name="Continent" value="South America">South America<br>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="Birthday">Birthday</label><br>
+              <input type="date" id="Birthday">
+            </td>
+            <td>&emsp;</td>
+            <td><label for="FavoriteColor">Favorite Color</label><br>
+              <input type="color" id="FavoriteColor">
+            </td>
+          </tr>
+        </table>
+
+      </fieldset>
+      <h4>4. All Done</h4>
+      <input type="checkbox" id="terms">
+      <label for="terms">I agree to the <a href="#">Terms of the
+          Site</a></label><br>
+      <input type="submit" value="Send">
+      <input type="submit" value="Clear Information">
+    </form>
+    <p>Dejanae Shirley, 2023 Copyright.</p>
+  </body>
+
+</html>
